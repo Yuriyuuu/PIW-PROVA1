@@ -23,10 +23,10 @@
                 const aprovados = estudantes.filter (estudante => estudante.nota >= 7,0);
                 const comPendencias = estudantes.filter (estudante => estudante.nota < 7,0);
 
-const nomesAprovados = aprovados.map (estudante => ({
-    nome: estudante.nome,
-    turma: estudante.turma
-}));
+const nomesAprovados = aprovados.map (estudante => (
+        {nome: estudante.nome,
+        turma: estudante.turma}
+));
 
 console.log("Aprovados:", aprovados);
 console.log("Com Pendencias:", comPendencias);
